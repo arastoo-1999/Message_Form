@@ -1,0 +1,24 @@
+@import "mixins";
+@import "variables";
+
+.Container {
+    @include Show(flex, center, center);
+    flex-direction: $f_direction;
+    margin: 150px 0 0 0;
+}
+
+.Image {
+    width: 150px;
+    margin: 10px;
+}
+
+.Container {
+    span  {
+        color: #39c239;
+    }
+}
+
+.BacktoForm {
+    margin: 20px;
+    text-decoration: none;
+}

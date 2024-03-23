@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Successimage from '../images/success.svg';
 
 // Styles
-import Styles from '../Styles/Success.module.css';
+import Styles from '../Styles/Success.module.scss';
 
 const Success = () => {
     return (

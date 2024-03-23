@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 // Styles
-import Styles from '../Styles/Form.module.css';
+import Styles from '../Styles/Form.module.scss';
 
 const Form = () => {
     return (

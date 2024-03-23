@@ -1,0 +1,17 @@
+@mixin overall($pad, $margin, $b_box) {
+    padding: $pad;
+    margin: $margin;
+    box-sizing: $b_box;
+}
+
+@mixin Show($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin multiple($width, $height, $b_radius) {
+    width: $width;
+    height: $height;
+    border-radius: $b_radius;
+}

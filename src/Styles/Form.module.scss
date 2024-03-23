@@ -1,0 +1,87 @@
+@import "mixins";
+@import "variables";
+
+* {
+   @include overall(0, 0, border-box);
+}
+
+.Main {
+    @include multiple(100vw, 100vh, 0);
+    @include Show(flex, center, center);
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+}
+
+
+.FormContainer {
+    @include Show(flex, center, center);
+    @include multiple(40vw, 65vh, 10px);
+    flex-direction: $f_direction;
+    border: 1px solid #3b3a3a2f;    
+    padding: 30px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    h1 {
+        color: $maincolor;
+        top: 20px;
+        left: 40px;
+        position: absolute;
+    }
+}
+
+.BoldLine {
+    @include multiple(100px, 5px, 5px);
+    background: $maincolor;
+    top: 60px;
+    left: 45px;
+    position: absolute;
+}
+
+.Name {
+    @include multiple(20em, 3em, 20px);
+    margin: 5px;
+    padding: 5px;
+    font: bold 1rem auto;
+    outline: $outline;
+    border: $border;
+}
+
+.Email {
+    @extend .Name;
+}
+
+input::placeholder {
+    padding: 5px;
+}
+
+.Message {
+    @include multiple(30em, 8em, 10px);
+    margin: 20px 0 0 0;
+    padding: 5px;
+    outline: $outline;
+    border: $border;
+    &::placeholder {
+        font-weight: $font_weight;
+    }
+}
+
+.Submit {
+    @include multiple(100px, 40px, 20px);
+    @include Show(flex, center, center);
+    border: $border;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 78%;
+    left: 17%;
+    background: $maincolor;
+}
+
+.Submit {
+ span {
+    font-size: 1rem;
+    font-weight: $font_weight;
+    color: #e9e9e9;
+    }
+}
